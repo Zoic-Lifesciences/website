@@ -36,7 +36,7 @@ export default function Navbar() {
   // Links array with About Us in between
   const links = [
     { type: "link", text: "Home", href: "/" },
-    { type: "dropdown", label: "About Us", items: [
+    { type: "dropdown", label: "About", items: [
         { href: "/about/team", text: "Team" },
         { href: "/about/mission", text: "Mission" },
         { href: "/about/careers", text: "Careers" },
@@ -48,6 +48,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#6ac7f0] p-4 shadow-md relative">
+      <div className="flex flex-row">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-xl font-bold">
           <Link href="/">ZOIC ™ Life Sciences</Link>
@@ -148,6 +149,53 @@ export default function Navbar() {
           </>
         )}
       </AnimatePresence>
+
+      <div className="hidden lg:flex flex-row items-center gap-6 ml-auto">
+  {links.map((item, index) => {
+    if (item.type === "link") {
+      return (
+        <motion.div
+          key={index}
+          custom={index}
+          variants={linkVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+        >
+          <Link
+            href={item.href}
+            onClick={() => setIsMenuOpen(false)}
+            className="text-white font-medium px-4 py-2 hover:bg-white/20 rounded transition"
+          >
+            {item.text}
+          </Link>
+        </motion.div>
+      );
+    } else if (item.type === "dropdown") {
+      return (
+        <motion.div
+          key={index}
+          custom={index}
+          variants={linkVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          className="relative"
+        >
+          <DropdownMenu
+            label={item.label}
+            items={item.items}
+            closeSidebar={() => setIsMenuOpen(false)}
+          />
+        </motion.div>
+      );
+    }
+  })}
+</div>
+
+      </div>
+      
+      
     </nav>
   );
 }
