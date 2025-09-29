@@ -42,12 +42,12 @@ export default function Navbar() {
         { href: "/about/careers", text: "Careers" },
       ]
     },
-    { type: "link", text: "Services", href: "/" },
+    { type: "link", text: "Services", href: "/about" },
     { type: "link", text: "Contact", href: "/" },
   ];
 
   return (
-    <nav className="bg-[#6ac7f0] p-4 shadow-md relative">
+    <nav className="bg-[#6ac7f0] p-4 shadow-md relative w-full">
       <div className="flex flex-row">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-xl font-bold">
