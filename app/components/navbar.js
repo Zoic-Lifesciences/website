@@ -47,7 +47,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#6ac7f0] p-4 shadow-md relative w-full">
+    <nav className="p-4 shadow-md relative">
       <div className="flex flex-row">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-xl font-bold">
