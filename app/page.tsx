@@ -9,19 +9,20 @@ export default function Home() {
         <div className="flex flex-col">
 
           {/* For Courosel */}
-          <Image
-            src="/Zoic-cover-img.jpg"
+          {/* <Image
+            src="/home.png"
             alt="Description of the image"
             width={1920}
-            height={250}
+            height={1250}
             className="w-screen"
-          />
+          /> */}
 
           {/* Welcome Message */}
-          <div className="flex flex-col items-center justify-center gap-12 pt-8 p-4">
-            <div className="flex flex-row gap-2">
-              <h1 className="w-[50%] font-bold text-xl">Zoic Lifesciences, where every stride is a step towards better science and a healthier, resilient Bharat.</h1>
-              <Image src="/pcd-banner.jpg" alt="Welcome Image" width={150} height={50} className="w-[50%] mx-auto"/>
+          <div className="flex flex-col items-center justify-center gap-12 pt-8 pb-8 p-4 bg-[url('/Home.png')] bg-cover bg-center bg-no-repeat">
+            <div className="flex flex-col gap-2">
+              <Image src="/logo.png" alt="Welcome Image" width={150} height={50} className="w-[30%] mb-12"/>
+              <h1 className="w-[50%] font-bold text-5xl w-[100%]">INDIA'S <br/> LEADING <br/>PCD PHARMA COMPANY</h1>
+              <p className="w-[80%]">We take pride in empowering healthcare across India, delivering quality medicines that people deserve.</p>
             </div>
             <button className="bg-blue-500 text-white py-2 px-4 rounded">
               APPLY FOR FRANCHISE
