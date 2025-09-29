@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import DropdownMenu from './dropdownNavbar';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,16 +48,23 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#6ac7f0] p-4 shadow-md relative">
+    <nav className="p-4 shadow-md relative">
       <div className="flex flex-row">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-xl font-bold">
-          <Link href="/">ZOIC ™ Life Sciences</Link>
+          <Link href="/">
+            <Image 
+              src="/logo.png" 
+              alt="Logo"
+              width={50}
+              height={50}
+            />
+          </Link>
         </div>
 
         <button
           onClick={toggleMenu}
-          className="lg:hidden text-white focus:outline-none"
+          className="lg:hidden focus:outline-none"
         >
           <svg
             className="w-6 h-6"
