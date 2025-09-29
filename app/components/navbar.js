@@ -43,7 +43,7 @@ export default function Navbar() {
         { href: "/about/careers", text: "Careers" },
       ]
     },
-    { type: "link", text: "Services", href: "/" },
+    { type: "link", text: "Services", href: "/about" },
     { type: "link", text: "Contact", href: "/" },
   ];
 
