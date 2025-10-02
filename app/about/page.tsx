@@ -3,11 +3,28 @@ import Navbar from "../components/navbar";
 import Carousel from "../components/carousel"
 
 export default function About() {
-  const awardImages = [
-    "/dice.png",
-    "/person.png",
-    "/logo.png",
-    "/mission.png",
+  const slides = [
+    {
+      image: "/mission.png",
+      title: "Our Mission",
+      type: "Our Mission",
+      text: "We at Zoic Life Sciences believes that complete customer satisfaction is the key to expand business everywhere.",
+      link: "#",
+    },
+    {
+      image: "/vision.png",
+      title: "Our Vision",
+      type: "Our Vision",
+      text: "To uphold our social responsibilities of delivering highest standard healthcare services.",
+      link: "#",
+    },
+    {
+      image: "/values.png",
+      title: "Our Values",
+      type: "Our Values",
+      text: "Our Business Values with clients are as simple as LIFELONG Business Relations",
+      link: "#",
+    },
   ];
     return (
       <div className="flex flex-col items-center justify-center bg-gray-50 text-gray-800 w-full">
@@ -25,10 +42,20 @@ export default function About() {
             <h2 className="text-2xl font-semibold mt-8 mb-4"> AWARDS</h2>
             <p>Mankind Pharma is proud to be recognized with multiple awards for advancements in research and development, excellence in manufacturing, dedication to quality, and fostering a supportive working environment.</p>
             <div className="w-[80%] h-[60%] flex justify-center items-center">
-            <Carousel images={awardImages} interval={1000}/>
+            
             </div>
             
           </div>
+
+          <section className="flex flex-col">
+            {/* MISSION */}
+            <div className="p-4 flex flex-row gap-8">
+              <Carousel slides={slides} interval={2000}/>
+              
+            </div>
+
+          
+          </section>
 
         </div>
       </div>
