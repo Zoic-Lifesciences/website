@@ -37,18 +37,18 @@ export default function Navbar() {
   // Links array with About Us in between
   const links = [
     { type: "link", text: "Home", href: "/" },
-    { type: "dropdown", label: "About", items: [
+    { type: "dropdown", label: "Services", items: [
         { href: "/about/team", text: "Team" },
         { href: "/about/mission", text: "Mission" },
         { href: "/about/careers", text: "Careers" },
       ]
     },
-    { type: "link", text: "Services", href: "/about" },
+    { type: "link", text: "About", href: "/about" },
     { type: "link", text: "Contact", href: "/" },
   ];
 
   return (
-    <nav className="p-4 shadow-md relative">
+    <nav className="p-4 shadow-md relative w-[100vw]">
       <div className="flex flex-row">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-white text-xl font-bold">
