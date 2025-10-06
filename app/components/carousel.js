@@ -29,7 +29,7 @@ export default function Carousel({ slides, interval = 5000 }) {
       {/* Card */}
       <div className="max-w-sm w-full bg-white rounded-2xl shadow-md overflow-hidden">
         {/* Image */}
-        <div className="relative h-48 w-full">
+        <div className="relative h-68 w-full">
           <Image
             src={slides[current].image}
             alt={slides[current].title}
