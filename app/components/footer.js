@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnve
 
 export default function Footer() {
   return (
-    <footer className="bg-[#252526] text-gray-300 pt-10 mt-10 font-[var(--font-geist-sans)]">
+    <footer className="bg-[#252526] text-gray-300 pt-10 font-[var(--font-geist-sans)]">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Contact Us */}

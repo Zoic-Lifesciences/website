@@ -173,7 +173,7 @@ export default function Navbar() {
           <Link
             href={item.href}
             onClick={() => setIsMenuOpen(false)}
-            className="text-white font-medium px-4 py-2 hover:bg-white/20 rounded transition"
+            className=" font-medium px-4 py-2 hover:bg-white/20 rounded transition"
           >
             {item.text}
           </Link>

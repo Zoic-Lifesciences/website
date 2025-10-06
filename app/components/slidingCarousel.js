@@ -2,7 +2,7 @@
 
 export default function SlidingCarousel({ verticals }) {
   return (
-    <section className="p-4 flex flex-col gap-8 bg-sky-900 pt-24 pb-24 text-white">
+    <section className="p-4 flex flex-col gap-8 bg-sky-700 pt-24 pb-24 text-white">
       <div>
         <h2 className="font-bold text-2xl mb-2">Our Business Verticals</h2>
         <p>
