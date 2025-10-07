@@ -116,15 +116,15 @@ export default function Home() {
 
           {/* Hero Section */}
           <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-row h-[90vh] w-[100vw] bg-gradient-to-r from-[#9081A4] text-white to-[#E1DEE9]">
-              <div className="flex flex-row w-[50vw] h-[90vh] items-center justify-center">
-                <div className="flex flex-col w-[35vw]">
-                  <h1 className="text-6xl text-start">
+            <div className="flex flex-col lg:flex-row h-auto lg:h-[90vh] w-full bg-gradient-to-r from-[#9081A4] to-[#E1DEE9] text-white">
+              <div className="flex flex-col lg:flex-row w-full lg:w-[50vw] h-auto lg:h-[90vh] items-center justify-center p-6 text-center lg:text-left">
+                <div className="flex flex-col w-full lg:w-[35vw]">
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl">
                     INDIA'S <span className="font-bold">LEADING</span> <br />
                     PCD <br />
                     PHARMA COMPANY
                   </h1>
-                  <p className="mt-5">
+                  <p className="mt-5 text-sm sm:text-base">
                     We take pride in empowering healthcare across India, delivering quality medicines that people deserve.
                   </p>
                   <button className="bg-[#7A7590] text-white py-2 px-4 rounded mt-4">
@@ -132,18 +132,18 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <div className="w-[50vw]"></div>
+              <div className="w-full lg:w-[50vw] h-[40vh] lg:h-auto"></div>
             </div>
           </div>
 
           {/* Innovating Section */}
-          <section className="w-[100vw] flex justify-center">
-            <div className="w-[80%] h-[60vh] flex gap-10 mt-10">
-              <div className="w-[50%]">
-                <h2 className="font-bold text-6xl mb-4 mt-5">
+          <section className="w-full flex justify-center">
+            <div className="w-[90%] lg:w-[80%] min-h-[60vh] flex flex-col lg:flex-row gap-10 mt-10 items-center text-center lg:text-left">
+              <div className="w-full lg:w-[50%]">
+                <h2 className="font-bold text-4xl sm:text-5xl lg:text-6xl mb-4 mt-5">
                   Innovating for the world
                 </h2>
-                <p className="text-lg">
+                <p className="text-base sm:text-lg">
                   The obsession with innovative healthcare solutions has made us the most prescribed pharma company in India.
                   We are architects of the future, setting new benchmarks in pharmaceutical excellence with drug discovery, advanced formulations, generic APIs, and biotechnology.
                 </p>
@@ -157,19 +157,19 @@ export default function Home() {
                   alt="Healthcare Illustration"
                   width={700}
                   height={700}
-                  className="mt-[-250px]"
+                  className="mt-6 lg:mt-[-250px]"
                 />
               </div>
             </div>
           </section>
 
           {/* Slides Section */}
-          <section className="flex w-[100vw] justify-center items-center">
-            <div className="flex w-[80vw] flex-wrap justify-center gap-8 mt-10 mb-10">
+          <section className="flex w-full justify-center items-center">
+            <div className="flex w-[90vw] lg:w-[80vw] flex-wrap justify-center gap-6 sm:gap-8 mt-10 mb-10">
               {slides.map((slide, index) => (
                 <div
                   key={index}
-                  className="relative w-[350px] h-[250px] rounded-2xl shadow-lg overflow-hidden bg-black bg-opacity-50"
+                  className="relative w-[90%] sm:w-[300px] md:w-[350px] h-[220px] sm:h-[250px] rounded-2xl shadow-lg overflow-hidden bg-black bg-opacity-50"
                 >
                   <img
                     src={slide.image}
@@ -186,22 +186,22 @@ export default function Home() {
 
           {/* Why Choose Us Section */}
           <section>
-            <div className="bg-[#E1DEE9] w-[100vw] h-[80vh] flex justify-center items-center">
-              <div className="w-[80vw] h-[80%]">
-                <h1 className="text-3xl w-[50%]">
+            <div className="bg-[#E1DEE9] w-full h-auto lg:h-[80vh] flex justify-center items-center py-10">
+              <div className="w-[90vw] lg:w-[80vw]">
+                <h1 className="text-2xl sm:text-3xl lg:text-3xl w-full lg:w-[50%] text-center lg:text-left">
                   Why Choose Us For Pharma Third Party <br />
                   Manufacturing Company in India
                 </h1>
-                <p className="w-[50%] mt-10 mb-5">
-                  At Zoic Life Sciences, we are committed to empowering pharma professionals, distributors, and entrepreneurs with profitable franchise opportunities backed by trust, quality, and innovation. With years of industry experience, we deliver everything you need to succeed in the PCD Pharma business.
+                <p className="w-full lg:w-[50%] mt-6 sm:mt-10 mb-5 text-center lg:text-left">
+                  At Zoic Life Sciences, we are committed to empowering pharma professionals, distributors, and entrepreneurs with profitable franchise opportunities backed by trust, quality, and innovation.
                 </p>
-                <div className="flex flex-wrap mt-10 gap-6">
+                <div className="flex flex-wrap justify-center lg:justify-start mt-10 gap-6">
                   {[...Array(4)].map((_, i) => (
-                    <div key={i} className="w-[250px] h-[300px] justify-end flex flex-col p-5 bg-white rounded-lg">
-                      <div className="w-[100%] flex justify-end items-end">
+                    <div key={i} className="w-[90%] sm:w-[250px] h-auto min-h-[300px] flex flex-col justify-end p-5 bg-white rounded-lg text-center lg:text-left">
+                      <div className="w-full flex justify-center lg:justify-end items-end mb-4">
                         <FaGlobe color="#A09ABC" size={30} />
                       </div>
-                      <h1 className="font-bold mb-5 w-[80%]">ISO 9001:2008 Certified</h1>
+                      <h1 className="font-bold mb-5">ISO 9001:2008 Certified</h1>
                       <p>
                         Zoic Life Sciences is an ISO certified Pharma company, committed to high quality products. We have also earned the right amount of trust, respect in the market.
                       </p>
@@ -221,19 +221,19 @@ export default function Home() {
               <p className="text-center mt-5">
                 Zoic Life Sciences is an ISO certified Pharma company, committed to high quality products.
               </p>
-              <div className="flex flex-row gap-10 mt-10">
-                <div>
-                  <h1 className="text-6xl">30</h1>
+              <div className="flex flex-col sm:flex-row gap-10 mt-10 items-center justify-center">
+                <div className="text-center">
+                  <h1 className="text-5xl sm:text-6xl">30</h1>
                   <p>Products</p>
                 </div>
-                <div className="w-px h-16 bg-gray-800"></div>
-                <div>
-                  <h1 className="text-6xl">300 +</h1>
+                <div className="hidden sm:block w-px h-16 bg-gray-800"></div>
+                <div className="text-center">
+                  <h1 className="text-5xl sm:text-6xl">300 +</h1>
                   <p>Products</p>
                 </div>
-                <div className="w-px h-16 bg-gray-800"></div>
-                <div>
-                  <h1 className="text-6xl">18</h1>
+                <div className="hidden sm:block w-px h-16 bg-gray-800"></div>
+                <div className="text-center">
+                  <h1 className="text-5xl sm:text-6xl">18</h1>
                   <p>Products</p>
                 </div>
               </div>
@@ -241,32 +241,37 @@ export default function Home() {
           </section>
 
           {/* Offerings Section */}
-          <section className="w-[100vw] flex justify-center">
-            <div className="w-[80%] min-h-[90vh] shadow-2xl rounded-2xl mt-[-100px] bg-white px-6 py-12">
-              <h1 className="text-center text-5xl">What we offer</h1>
-              <p className="text-center mt-5">
-                Partner with us to leverage our expertise and resources.
-              </p>
-              <div className="mt-12 flex flex-wrap justify-center gap-8">
-                {offerings.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex flex-col items-center bg-white p-6 rounded-xl shadow-md w-[400px]"
-                  >
-                    <Image
-                      src={item.img}
-                      alt={item.title}
-                      width={150}
-                      height={150}
-                      className="object-contain"
-                    />
-                    <h1 className="font-bold text-xl mt-4 text-center">{item.title}</h1>
-                    <h2 className="text-gray-700 mt-2 text-center">{item.text}</h2>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+<section className="w-full flex justify-center">
+  <div className="w-[90%] lg:w-[80%] min-h-[90vh] shadow-2xl rounded-2xl mt-[-100px] bg-white px-4 sm:px-6 py-12">
+    <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl">What we offer</h1>
+    <p className="text-center mt-5 text-sm sm:text-base">
+      Partner with us to leverage our expertise and resources.
+    </p>
+
+    {/* Scrollable on small screens */}
+    <div className="mt-12 flex overflow-x-auto lg:overflow-visible space-x-6 space-y-6 sm:space-x-8 px-2 sm:px-0 no-scrollbar lg:flex-wrap lg:justify-center">
+      {offerings.map((item, idx) => (
+        <div
+          key={idx}
+          className="flex-none lg:flex-initial flex flex-col items-center bg-white p-6 rounded-xl shadow-md w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px]"
+        >
+          <Image
+  src={item.img}
+  alt={item.title}
+  width={0}
+  height={0}
+  sizes="100vw"
+  className="object-contain w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px]"
+/>
+
+          <h1 className="font-bold text-xl mt-4 text-center">{item.title}</h1>
+          <h2 className="text-gray-700 mt-2 text-center">{item.text}</h2>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
           {/* Testimonials Section */}
           <section className="mt-12">
