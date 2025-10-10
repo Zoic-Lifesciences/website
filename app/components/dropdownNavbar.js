@@ -16,17 +16,17 @@ export default function DropdownMenu({ label, items, closeSidebar }) {
   };
 
   return (
-    <div className="relative w-full lg:w-auto lg:text-white">
+    <div className="relative w-full lg:w-auto ">
       {/* Main button */}
       <button
         onClick={toggleDropdown}
-        className="w-full lg:w-auto  flex justify-between items-center py-4 px-4 lg:px-2 focus:outline-none hover:bg-white/20 rounded transition"
+        className="w-fulllg:w-auto  flex justify-between items-center py-4 px-4 lg:px-2 focus:outline-none hover:bg-white/20 rounded transition"
       >
         <span>{label}</span>
         {isOpen ? (
-          <ChevronUpIcon className="w-5 h-5 lg:text-white ml-1" />
+          <ChevronUpIcon className="w-5 h-5 ml-1" />
         ) : (
-          <ChevronDownIcon className="w-5 h-5 lg:text-white ml-1" />
+          <ChevronDownIcon className="w-5 h-5 ml-1" />
         )}
       </button>
 
@@ -40,7 +40,7 @@ export default function DropdownMenu({ label, items, closeSidebar }) {
               open: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
               closed: { transition: { staggerChildren: 0.1, staggerDirection: -1 } },
             }}
-            className="flex flex-col lg:absolute lg:left-0 lg:mt-2 lg:w-48  hover:bg-white/20 shadow-lg z-50 overflow-hidden"
+            className="flex flex-col bg-gray-200 lg:absolute lg:left-0 lg:mt-2 lg:w-48  hover:bg-gray-200 shadow-lg z-50 overflow-hidden"
           >
             {items.map((item, index) => (
               <motion.div

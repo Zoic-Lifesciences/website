@@ -51,7 +51,7 @@ export default function Navbar() {
     <nav className="p-4 shadow-md relative w-[100vw]">
       <div className="flex flex-row">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="text-white text-xl font-bold">
+        <div className="text-xl font-bold">
           <Link href="/">
             <Image 
               src="/logo.png" 
